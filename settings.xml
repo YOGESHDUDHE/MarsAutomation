@@ -1,0 +1,25 @@
+<settings>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  https://sonarqubetest.mars.com/
+                </sonar.host.url>
+				<sonar.projectKey>
+				  Mars-Selenium-Repository
+				</sonar.projectKey>
+                <sonar.projectName>
+                  Mars Selenium Repository
+                </sonar.projectName>
+            </properties>
+        </profile>
+     </profiles>
+</settings>
